@@ -1,0 +1,64 @@
+{
+  "niveles": [
+    {
+      "nivel": 1,
+      "problemas": [
+        {
+          "expresion": "-2y * y",
+          "opciones": ["-2y^2", "2y^2", "-2y"],
+          "respuestaCorrecta": 0
+        },
+        {
+          "expresion": "3x + 5x",
+          "opciones": ["8x", "15x", "8x^2"],
+          "respuestaCorrecta": 0
+        },
+        {
+          "expresion": "4a - 2a",
+          "opciones": ["2a", "6a", "2a^2"],
+          "respuestaCorrecta": 0
+        }
+      ]
+    },
+    {
+      "nivel": 2,
+      "problemas": [
+        {
+          "expresion": "6b * 3b",
+          "opciones": ["18b^2", "9b^2", "18b"],
+          "respuestaCorrecta": 0
+        },
+        {
+          "expresion": "7c + 2c - 3c",
+          "opciones": ["6c", "12c", "6c^2"],
+          "respuestaCorrecta": 0
+        },
+        {
+          "expresion": "5d * (-2d)",
+          "opciones": ["-10d^2", "10d^2", "-10d"],
+          "respuestaCorrecta": 0
+        }
+      ]
+    },
+    {
+      "nivel": 3,
+      "problemas": [
+        {
+          "expresion": "8e * e * e",
+          "opciones": ["8e^3", "8e^2", "8e"],
+          "respuestaCorrecta": 0
+        },
+        {
+          "expresion": "9f - 4f + 2f",
+          "opciones": ["7f", "15f", "7f^2"],
+          "respuestaCorrecta": 0
+        },
+        {
+          "expresion": "10g * (-3g)",
+          "opciones": ["-30g^2", "30g^2", "-30g"],
+          "respuestaCorrecta": 0
+        }
+      ]
+    }
+  ]
+}
