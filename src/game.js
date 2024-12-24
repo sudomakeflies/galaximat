@@ -55,9 +55,13 @@ function preload() {
     this.load.image('background', 'assets/space.jpeg');
     this.load.image('platform', 'assets/platform.png');
     this.load.spritesheet('alien', 'assets/alien.png', { frameWidth: 32, frameHeight: 48 });
+    this.load.audio('jumpSound', 'assets/sounds/jump.mp3');
+    this.load.audio('backgroundMusic', 'assets/sounds/background.mp3');
 }
 
 async function create() {
+    this.backgroundMusic = this.sound.add('backgroundMusic', {volume: 0.5, loop: true });
+    this.backgroundMusic.play();
     try {
         const response = await fetch('src/dummy_data.json');
         if (!response.ok) {
@@ -173,7 +177,7 @@ function handlePlatformClick(platform, scene, platformIndex) {
         console.log('Animación en progreso, click ignorado');
         return;
     }
-    
+    scene.sound.play('jumpSound');
     // Enable gravity when player starts jumping
     player.body.setAllowGravity(true);
 
@@ -530,6 +534,7 @@ function updatePlatformAnswers() {
 function loadQuestion(scene) {
     if (currentLevel >= questions.length) {
         console.log("Game Over");
+        scene.backgroundMusic.stop();
         scene.scene.start('GameOverScreen');
         return;
     }
@@ -540,6 +545,7 @@ function loadQuestion(scene) {
         currentProblemIndex = 0;
         if (currentLevel >= questions.length) {
             console.log("Game Over");
+            scene.backgroundMusic.stop();
             scene.scene.start('GameOverScreen');
             return;
         }
