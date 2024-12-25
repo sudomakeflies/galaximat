@@ -47,6 +47,11 @@ let failures = 0;
 let failureText;
 let questions;
 let isAnimating = false;
+let timer;
+let timeLimit = 6;
+let timerText;
+let levelText;
+let levelDescriptionText;
 
 // Agreguemos una variable global para trackear los colliders
 let platformColliders = [];
@@ -84,9 +89,13 @@ async function create() {
     player.body.setAllowGravity(false); // Disable gravity initially
 
     // UI elements
-    scoreText = this.add.text(10, 30, `Score: ${score}`, { fontSize: '20px', fill: '#fff' });
-    failureText = this.add.text(10, 50, `Failures: ${failures}`, { fontSize: '20px', fill: '#fff' });
-    expressionText = this.add.text(10, 10, '', { fontSize: '20px', fill: '#fff' });
+    scoreText = this.add.text(10, 30, `Score: ${score}`, { fontSize: '20px', fill: '#0f0' });
+    failureText = this.add.text(10, 50, `Failures: ${failures}`, { fontSize: '20px', fill: '#f00' });
+    expressionText = this.add.text(400, 100, '', { fontSize: '36px', fill: '#fff', backgroundColor: '#000', padding: { x: 10, y: 10 }, align: 'center' }).setOrigin(0.5);
+
+    // Level UI elements
+    levelText = this.add.text(790, 10, '', { fontSize: '24px', fill: '#0f0', align: 'right' }).setOrigin(1, 0);
+    levelDescriptionText = this.add.text(790, 35, '', { fontSize: '16px', fill: '#fff', align: 'right' }).setOrigin(1, 0);
 
     // Inicializar plataformas
     initializePlatformGrid(this);
@@ -139,6 +148,18 @@ async function create() {
 
     // Debug text
     this.add.text(10, 70, 'Debug: Click enabled', { fontSize: '16px', fill: '#ff0' });
+
+    // Initialize timer
+    timerText = this.add.text(10, 10, `Time: ${timeLimit}`, { fontSize: '20px', fill: '#fff' });
+    timer = this.time.addEvent({
+        delay: timeLimit * 1000,
+        callback: () => {
+            this.backgroundMusic.stop();
+            this.scene.start('GameOverScreen');
+        },
+        callbackScope: this,
+        loop: false
+    });
 }
 
 function initializePlatformGrid(scene) {
@@ -178,6 +199,15 @@ function handlePlatformClick(platform, scene, platformIndex) {
         return;
     }
     scene.sound.play('jumpSound');
+    timer.reset({
+        delay: timeLimit * 1000,
+        callback: () => {
+            scene.backgroundMusic.stop();
+            scene.scene.start('GameOverScreen');
+        },
+        callbackScope: scene,
+        loop: false
+    });
     // Enable gravity when player starts jumping
     player.body.setAllowGravity(true);
 
@@ -558,6 +588,10 @@ function loadQuestion(scene) {
     currentProblemIndex++;
     
     expressionText.setText(currentExpression);
+    
+    levelText.setText(`Nivel ${currentLevel + 1}`);
+    levelDescriptionText.setText(questions[currentLevel].descripcion);
+    
     updatePlatformAnswers();
     
     console.log('Nueva pregunta cargada:', {
@@ -575,6 +609,9 @@ function update() {
         } else {
             player.anims.play('walk', true);
         }
+    }
+    if (timerText) {
+        timerText.setText(`Time: ${Math.ceil(timer.getRemainingSeconds())}`);
     }
 }
 
