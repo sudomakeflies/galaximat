@@ -4,13 +4,22 @@ import GameOverScreen from './gameover_screen.js';
 // Game configuration
 const config = {
     type: Phaser.AUTO,
-    width: 800,
-    height: 600,
+    scale: {
+        mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_HORIZONTALLY,
+        parent: 'game',
+        width: 800,
+        height: 600,
+        min: {
+            width: 320,
+            height: 480
+        }
+    },
     physics: {
         default: 'arcade',
         arcade: {
             gravity: { y: 300 },
-            debug: true  // Activado para debug
+            debug: false  // Activado para debug
         }
     },
     scene: [StartScreen, GameOverScreen, {
@@ -24,11 +33,17 @@ const config = {
 const game = new Phaser.Game(config);
 
 // Ajuste de constantes para mejor posicionamiento
-const PLATFORM_SPACING_Y = 120;    // Espacio entre filas (reducido para menor separación)
-const PLATFORM_BASE_Y = 500;      // Posición base del jugador
+//const PLATFORM_SPACING_Y = 120;    // Espacio entre filas (reducido para menor separación)
+// Ajuste de constantes para dispositivos móviles
+const PLATFORM_SPACING_Y = window.innerHeight < 600 ? 100 : 120;
+const PLATFORM_BASE_Y = window.innerHeight < 600 ? 400 : 500;
+const PLATFORM_SCALES = window.innerHeight < 600 ? 
+    [1.2, 1.0, 0.8] : // Móvil
+    [1.5, 1.3, 1.1];  // Desktop
+//const PLATFORM_BASE_Y = 500;      // Posición base del jugador
 const FIRST_ROW_Y = 400;         // Primera fila de plataformas (ajustado para estar más cerca del jugador)
 const GRID_ROWS = 3;
-const PLATFORM_SCALES = [1.5, 1.3, 1.1]; // Largest at bottom, smallest at top
+//const PLATFORM_SCALES = [1.5, 1.3, 1.1]; // Largest at bottom, smallest at top
 const ROW_X_OFFSETS = [0, 40, 80];
 const SCROLL_DURATION = 400;      // Duración de la animación de scroll
 const INITIAL_ROWS = 3;
@@ -56,6 +71,57 @@ let levelDescriptionText;
 // Agreguemos una variable global para trackear los colliders
 let platformColliders = [];
 
+
+
+// Función para ajustar el UI
+function createUI(scene) {
+    const fontSize = window.innerWidth < 600 ? '16px' : '20px';
+    const expressionFontSize = window.innerWidth < 600 ? '24px' : '36px';
+    
+    scoreText = scene.add.text(10, 10, `Score: ${score}`, { 
+        fontSize, 
+        fill: '#0f0' 
+    });
+    
+    failureText = scene.add.text(10, 30, `Failures: ${failures}`, { 
+        fontSize, 
+        fill: '#f00' 
+    });
+    
+    expressionText = scene.add.text(
+        scene.cameras.main.centerX, 
+        70, 
+        '', 
+        { 
+            fontSize: expressionFontSize, 
+            fill: '#fff',
+            backgroundColor: '#000',
+            padding: { x: 10, y: 5 }
+        }
+    ).setOrigin(0.5);
+    
+    // Ajustar posición de textos en plataformas
+    platformRows.forEach(row => {
+        row.platforms.forEach(p => {
+            if (p.text) {
+                p.text.setFontSize(window.innerWidth < 600 ? '16px' : '24px');
+                p.text.y = p.platform.y + (window.innerWidth < 600 ? 10 : 14);
+            }
+        });
+    });
+}
+
+// Función para ajustar input táctil
+/*function enableTouchInput(scene) {
+    scene.input.on('gameobjectdown', function(pointer, gameObject) {
+        if (gameObject.input && gameObject.input.enabled) {
+            const platformIndex = gameObject.platformIndex;
+            handlePlatformClick(gameObject, scene, platformIndex);
+        }
+    });
+}*/
+
+
 function preload() {
     this.load.image('background', 'assets/space.jpeg');
     this.load.image('platform', 'assets/platform.png');
@@ -67,7 +133,7 @@ function preload() {
 
 async function create() {
     loadGameProgress();
-    this.backgroundMusic = this.sound.add('backgroundMusic', {volume: 0.5, loop: true });
+    this.backgroundMusic = this.sound.add('backgroundMusic', {volume: 0.6, loop: true });
     this.backgroundMusic.play();
     try {
         const response = await fetch('src/dummy_data.json');
@@ -216,6 +282,7 @@ function handlePlatformClick(platform, scene, platformIndex) {
     if (platformIndex === currentCorrectAnswer) {
         console.log('¡Respuesta correcta!');
         score++;
+        currentProblemIndex++; // Incrementar solo en respuesta correcta
         scoreText.setText(`Score: ${score}`);
         saveGameProgress();
         isAnimating = true;
@@ -593,7 +660,7 @@ function loadQuestion(scene) {
     currentExpression = currentProblem.expresion;
     currentAnswers = currentProblem.opciones;
     currentCorrectAnswer = currentProblem.respuestaCorrecta;
-    currentProblemIndex++;
+    //currentProblemIndex++;
     
     expressionText.setText(currentExpression);
     
@@ -601,7 +668,7 @@ function loadQuestion(scene) {
     levelDescriptionText.setText(questions[currentLevel].descripcion);
     
     updatePlatformAnswers();
-    saveGameProgress();
+    //saveGameProgress();
     
     console.log('Nueva pregunta cargada:', {
         expresion: currentExpression,

@@ -9,7 +9,7 @@ class GameOverScreen extends Phaser.Scene {
     }
 
     create() {
-        this.gameOverSound = this.sound.add('gameOverSound', { loop: false });
+        this.gameOverSound = this.sound.add('gameOverSound', { volume: 0.5, loop: false });
         this.gameOverSound.play();
         this.add.image(400, 300, 'gameover_splash');
         const gameOverText = this.add.text(400, 450, '', { fontSize: '32px', fill: '#fff' })

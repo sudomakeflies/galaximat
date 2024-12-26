@@ -9,7 +9,7 @@ class StartScreen extends Phaser.Scene {
     }
 
     create() {
-        this.introMusic = this.sound.add('introMusic', { loop: true });
+        this.introMusic = this.sound.add('introMusic', { volume: 0.5, loop: true });
         this.introMusic.play();
         this.add.image(400, 300, 'start_splash');
         const startButton = this.add.text(400, 300, '         ', { fontSize: '32px', fill: '#fff' })
