@@ -6,102 +6,102 @@
       "problemas": [
         {
           "expresion": "2x + 3x",
-          "opciones": ["5x", "6x", "5x^2"],
+          "opciones": ["5x", "6x", "5x²"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "4y * 2y",
-          "opciones": ["8y^2", "6y", "8y"],
+          "expresion": "4y × 2y",
+          "opciones": ["8y²", "6y", "8y"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "6a - 2a",
-          "opciones": ["4a", "8a", "4a^2"],
+          "expresion": "6a − 2a",
+          "opciones": ["4a", "8a", "4a²"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "-3b * b",
-          "opciones": ["-3b^2", "3b^2", "-3b"],
+          "expresion": "−3b × b",
+          "opciones": ["−3b²", "3b²", "−3b"],
           "respuestaCorrecta": 0
         },
         {
           "expresion": "5x + 2x + x",
-          "opciones": ["8x^2", "7x", "8x"],
+          "opciones": ["8x²", "7x", "8x"],
           "respuestaCorrecta": 2
         },
         {
-          "expresion": "9y - 4y",
-          "opciones": ["5y", "13y", "5y^2"],
+          "expresion": "9y − 4y",
+          "opciones": ["5y", "13y", "5y²"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "2z * 3",
-          "opciones": ["6z", "5z", "6z^2"],
+          "expresion": "2z × 3",
+          "opciones": ["6z", "5z", "6z²"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "8w - w",
-          "opciones": ["7w^2", "9w", "7w"],
+          "expresion": "8w − w",
+          "opciones": ["7w²", "9w", "7w"],
           "respuestaCorrecta": 2
         },
         {
-          "expresion": "4v * (-2)",
-          "opciones": ["8v", "-8v", "-8v^2"],
+          "expresion": "4v × (−2)",
+          "opciones": ["8v", "−8v", "−8v²"],
           "respuestaCorrecta": 1
         },
         {
           "expresion": "10u + 5u",
-          "opciones": ["5u", "15u", "15u^2"],
+          "opciones": ["5u", "15u", "15u²"],
           "respuestaCorrecta": 1
         },
         {
-          "expresion": "3t * t",
-          "opciones": ["3t", "3t^2", "6t"],
+          "expresion": "3t × t",
+          "opciones": ["3t", "3t²", "6t"],
           "respuestaCorrecta": 1
         },
         {
-          "expresion": "7s - 3s - 2s",
-          "opciones": ["2s", "12s", "2s^2"],
+          "expresion": "7s − 3s − 2s",
+          "opciones": ["2s", "12s", "2s²"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "5r * 2",
-          "opciones": ["10r", "7r", "10r^2"],
+          "expresion": "5r × 2",
+          "opciones": ["10r", "7r", "10r²"],
           "respuestaCorrecta": 0
         },
         {
           "expresion": "6q + q",
-          "opciones": ["7q^2", "5q", "7q"],
+          "opciones": ["7q²", "5q", "7q"],
           "respuestaCorrecta": 2
         },
         {
-          "expresion": "4p * (-1)",
-          "opciones": ["-4p", "4p", "-4p^2"],
+          "expresion": "4p × (−1)",
+          "opciones": ["−4p", "4p", "−4p²"],
           "respuestaCorrecta": 0
         },
         {
           "expresion": "8n + 3n",
-          "opciones": ["11n", "5n", "11n^2"],
+          "opciones": ["11n", "5n", "11n²"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "2m * m",
-          "opciones": ["2m", "2m^2", "4m"],
+          "expresion": "2m × m",
+          "opciones": ["2m", "2m²", "4m"],
           "respuestaCorrecta": 1
         },
         {
-          "expresion": "9a - 4a",
-          "opciones": ["5a", "13a", "5a^2"],
+          "expresion": "9a − 4a",
+          "opciones": ["5a", "13a", "5a²"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "3k * 4",
-          "opciones": ["12k^2", "7k", "12k"],
+          "expresion": "3k × 4",
+          "opciones": ["12k²", "7k", "12k"],
           "respuestaCorrecta": 2
         },
         {
           "expresion": "7j + 2j",
-          "opciones": ["9j", "5j", "9j^2"],
+          "opciones": ["9j", "5j", "9j²"],
           "respuestaCorrecta": 0
         }
       ]
@@ -111,103 +111,103 @@
       "descripcion": "Operaciones con monomios y exponentes",
       "problemas": [
         {
-          "expresion": "3x^2 * 2x",
-          "opciones": ["6x^3", "5x^2", "6x^2"],
+          "expresion": "3x² × 2x",
+          "opciones": ["6x³", "5x²", "6x²"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "4y^2 + 2y^2",
-          "opciones": ["6y^2", "6y", "6y^3"],
+          "expresion": "4y² + 2y²",
+          "opciones": ["6y²", "6y", "6y³"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "5a^3 * (-2a)",
-          "opciones": ["-10a^4", "10a^3", "-10a^3"],
+          "expresion": "5a³ × (−2a)",
+          "opciones": ["−10a⁴", "10a³", "−10a³"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "8b^2 - 3b^2",
-          "opciones": ["5b^2", "11b^2", "5b^4"],
+          "expresion": "8b² − 3b²",
+          "opciones": ["5b²", "11b²", "5b⁴"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "2x^3 * x^2",
-          "opciones": ["2x^5", "2x^6", "2x^4"],
+          "expresion": "2x³ × x²",
+          "opciones": ["2x⁵", "2x⁶", "2x⁴"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "6y^2 + y^2 + 2y^2",
-          "opciones": ["9y^2", "9y", "9y^3"],
+          "expresion": "6y² + y² + 2y²",
+          "opciones": ["9y²", "9y", "9y³"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "4z^3 * (-3z^2)",
-          "opciones": ["-12z^5", "12z^5", "-12z^6"],
+          "expresion": "4z³ × (−3z²)",
+          "opciones": ["−12z⁵", "12z⁵", "−12z⁶"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "7w^4 - 2w^4",
-          "opciones": ["5w^4", "9w^4", "5w^8"],
+          "expresion": "7w⁴ − 2w⁴",
+          "opciones": ["5w⁴", "9w⁴", "5w⁸"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "3v^2 * v^3",
-          "opciones": ["3v^5", "3v^6", "3v^4"],
+          "expresion": "3v² × v³",
+          "opciones": ["3v⁵", "3v⁶", "3v⁴"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "9u^3 + 4u^3",
-          "opciones": ["13u^3", "13u^6", "5u^3"],
+          "expresion": "9u³ + 4u³",
+          "opciones": ["13u³", "13u⁶", "5u³"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "2t^2 * 4t^3",
-          "opciones": ["8t^5", "6t^5", "8t^6"],
+          "expresion": "2t² × 4t³",
+          "opciones": ["8t⁵", "6t⁵", "8t⁶"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "5s^4 - 3s^4",
-          "opciones": ["2s^4", "8s^4", "2s^8"],
+          "expresion": "5s⁴ − 3s⁴",
+          "opciones": ["2s⁴", "8s⁴", "2s⁸"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "6r^2 * r^4",
-          "opciones": ["6r^6", "6r^8", "6r^5"],
+          "expresion": "6r² × r⁴",
+          "opciones": ["6r⁶", "6r⁸", "6r⁵"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "8q^3 + 3q^3",
-          "opciones": ["11q^3", "11q^6", "5q^3"],
+          "expresion": "8q³ + 3q³",
+          "opciones": ["11q³", "11q⁶", "5q³"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "4p^2 * (-2p^3)",
-          "opciones": ["-8p^5", "8p^5", "-8p^6"],
+          "expresion": "4p² × (−2p³)",
+          "opciones": ["−8p⁵", "8p⁵", "−8p⁶"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "7n^4 - 4n^4",
-          "opciones": ["3n^4", "11n^4", "3n^8"],
+          "expresion": "7n⁴ − 4n⁴",
+          "opciones": ["3n⁴", "11n⁴", "3n⁸"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "5m^3 * m^2",
-          "opciones": ["5m^5", "5m^6", "5m^4"],
+          "expresion": "5m³ × m²",
+          "opciones": ["5m⁵", "5m⁶", "5m⁴"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "9l^2 + 2l^2",
-          "opciones": ["11l^2", "11l^4", "7l^2"],
+          "expresion": "9l² + 2l²",
+          "opciones": ["11l²", "11l⁴", "7l²"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "3k^3 * 2k^2",
-          "opciones": ["6k^5", "5k^5", "6k^6"],
+          "expresion": "3k³ × 2k²",
+          "opciones": ["6k⁵", "5k⁵", "6k⁶"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "8j^4 - 5j^4",
-          "opciones": ["3j^4", "13j^4", "3j^8"],
+          "expresion": "8j⁴ − 5j⁴",
+          "opciones": ["3j⁴", "13j⁴", "3j⁸"],
           "respuestaCorrecta": 0
         }
       ]
@@ -222,98 +222,98 @@
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "(5y - 2) - (3y + 1)",
-          "opciones": ["2y - 3", "8y - 3", "2y - 1"],
+          "expresion": "(5y − 2) − (3y + 1)",
+          "opciones": ["2y − 3", "8y − 3", "2y − 1"],
           "respuestaCorrecta": 0
         },
         {
           "expresion": "(3a + 2)(2a)",
-          "opciones": ["6a^2 + 4a", "5a^2 + 2a", "6a + 4"],
+          "opciones": ["6a² + 4a", "5a² + 2a", "6a + 4"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "(4x - 1) + (2x + 5)",
+          "expresion": "(4x − 1) + (2x + 5)",
           "opciones": ["6x + 4", "6x + 3", "4x + 4"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "(7y + 3) - (4y - 2)",
+          "expresion": "(7y + 3) − (4y − 2)",
           "opciones": ["3y + 5", "11y + 1", "3y + 1"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "(2b - 3)(3b)",
-          "opciones": ["6b^2 - 9b", "5b^2 - 3b", "6b - 9"],
+          "expresion": "(2b − 3)(3b)",
+          "opciones": ["6b² − 9b", "5b² − 3b", "6b − 9"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "(5x + 2) + (3x - 4)",
-          "opciones": ["8x - 2", "8x + 6", "5x - 2"],
+          "expresion": "(5x + 2) + (3x − 4)",
+          "opciones": ["8x − 2", "8x + 6", "5x − 2"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "(6y - 1) - (2y + 3)",
-          "opciones": ["4y - 4", "8y - 4", "4y + 2"],
+          "expresion": "(6y − 1) − (2y + 3)",
+          "opciones": ["4y − 4", "8y − 4", "4y + 2"],
           "respuestaCorrecta": 0
         },
         {
           "expresion": "(4c + 1)(2c)",
-          "opciones": ["8c^2 + 2c", "6c^2 + c", "8c + 2"],
+          "opciones": ["8c² + 2c", "6c² + c", "8c + 2"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "(3x - 2) + (5x + 4)",
-          "opciones": ["8x + 2", "8x - 2", "3x + 2"],
+          "expresion": "(3x − 2) + (5x + 4)",
+          "opciones": ["8x + 2", "8x − 2", "3x + 2"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "(9y + 2) - (4y - 1)",
-          "opciones": ["5y + 3", "13y + 1", "5y - 1"],
+          "expresion": "(9y + 2) − (4y − 1)",
+          "opciones": ["5y + 3", "13y + 1", "5y − 1"],
           "respuestaCorrecta": 0
         },
         {
           "expresion": "(2d + 3)(4d)",
-          "opciones": ["8d^2 + 12d", "6d^2 + 3d", "8d + 12"],
+          "opciones": ["8d² + 12d", "6d² + 3d", "8d + 12"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "(6x + 1) + (2x - 5)",
-          "opciones": ["8x - 4", "8x + 6", "6x - 4"],
+          "expresion": "(6x + 1) + (2x − 5)",
+          "opciones": ["8x − 4", "8x + 6", "6x − 4"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "(7y - 3) - (3y + 2)",
-          "opciones": ["4y - 5", "10y - 5", "4y + 1"],
+          "expresion": "(7y − 3) − (3y + 2)",
+          "opciones": ["4y − 5", "10y − 5", "4y + 1"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "(3e - 2)(3e)",
-          "opciones": ["9e^2 - 6e", "6e^2 - 2e", "9e - 6"],
+          "expresion": "(3e − 2)(3e)",
+          "opciones": ["9e² − 6e", "6e² − 2e", "9e − 6"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "(4x + 3) + (5x - 2)",
+          "expresion": "(4x + 3) + (5x − 2)",
           "opciones": ["9x + 1", "9x + 5", "4x + 1"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "(8y + 1) - (3y - 4)",
-          "opciones": ["5y + 5", "11y - 3", "5y - 3"],
+          "expresion": "(8y + 1) − (3y − 4)",
+          "opciones": ["5y + 5", "11y − 3", "5y − 3"],
           "respuestaCorrecta": 0
         },
         {
           "expresion": "(2f + 1)(5f)",
-          "opciones": ["10f^2 + 5f", "7f^2 + f", "10f + 5"],
+          "opciones": ["10f² + 5f", "7f² + f", "10f + 5"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "(5x - 2) + (4x + 6)",
-          "opciones": ["9x + 4", "9x - 4", "5x + 4"],
+          "expresion": "(5x − 2) + (4x + 6)",
+          "opciones": ["9x + 4", "9x − 4", "5x + 4"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "(6y + 2) - (2y - 1)",
-          "opciones": ["4y + 3", "8y + 1", "4y - 1"],
+          "expresion": "(6y + 2) − (2y − 1)",
+          "opciones": ["4y + 3", "8y + 1", "4y − 1"],
           "respuestaCorrecta": 0
         }
       ]
@@ -323,103 +323,103 @@
       "descripcion": "Multiplicación de expresiones y potencias simples",
       "problemas": [
         {
-          "expresion": "x * (x + 2)",
-          "opciones": ["x^2 + 2x", "2x^2", "x^2 + x"],
+          "expresion": "x × (x + 2)",
+          "opciones": ["x² + 2x", "2x²", "x² + x"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "2x * (x - 1)",
-          "opciones": ["2x^2 - x", "2x^2 - 2x", "x^2 - 2x"],
+          "expresion": "2x × (x − 1)",
+          "opciones": ["2x² − x", "2x² − 2x", "x² − 2x"],
           "respuestaCorrecta": 1
         },
         {
-          "expresion": "-3x * (x + 1)",
-          "opciones": ["-3x^2 - x", "-3x^2 - 3x", "-3x^2 + 3x"],
+          "expresion": "−3x × (x + 1)",
+          "opciones": ["−3x² − x", "−3x² − 3x", "−3x² + 3x"],
           "respuestaCorrecta": 1
         },
         {
-          "expresion": "(x^2)^2",
-          "opciones": ["x^4", "x^3", "x^8"],
+          "expresion": "(x²)²",
+          "opciones": ["x⁴", "x³", "x⁸"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "x * (x - 3)",
-          "opciones": ["x^2 - x", "x^2 - 2x", "x^2 - 3x"],
+          "expresion": "x × (x − 3)",
+          "opciones": ["x² − x", "x² − 2x", "x² − 3x"],
           "respuestaCorrecta": 2
         },
         {
-          "expresion": "-2x^2/x",
-          "opciones": ["-2", "-2x", "-x"],
+          "expresion": "−2x² ÷ x",
+          "opciones": ["−2", "−2x", "−x"],
           "respuestaCorrecta": 1
         },
         {
-          "expresion": "(x^3)^2",
-          "opciones": ["x^5", "x^6", "x^9"],
+          "expresion": "(x³)²",
+          "opciones": ["x⁵", "x⁶", "x⁹"],
           "respuestaCorrecta": 1
         },
         {
-          "expresion": "4x * (x + 2)",
-          "opciones": ["4x^2 + 8x", "4x^2 + 4x", "4x^2 + 2x"],
+          "expresion": "4x × (x + 2)",
+          "opciones": ["4x² + 8x", "4x² + 4x", "4x² + 2x"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "6x^2/2x",
-          "opciones": ["3x^2", "3x", "6x"],
+          "expresion": "6x² ÷ 2x",
+          "opciones": ["3x²", "3x", "6x"],
           "respuestaCorrecta": 1
         },
         {
-          "expresion": "-x * (x + 4)",
-          "opciones": ["-x^2 - 4", "-x^2 - 4x", "-x^2 + 4x"],
+          "expresion": "−x × (x + 4)",
+          "opciones": ["−x² − 4", "−x² − 4x", "−x² + 4x"],
           "respuestaCorrecta": 1
         },
         {
-          "expresion": "(x^2)^3",
-          "opciones": ["x^5", "x^8", "x^6"],
+          "expresion": "(x²)³",
+          "opciones": ["x⁵", "x⁸", "x⁶"],
           "respuestaCorrecta": 2
         },
         {
-          "expresion": "3x * (x - 2)",
-          "opciones": ["3x^2 - 6x", "3x^2 - 2x", "3x^2 + 6x"],
+          "expresion": "3x × (x − 2)",
+          "opciones": ["3x² − 6x", "3x² − 2x", "3x² + 6x"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "8x^2/4",
-          "opciones": ["2x^2", "4x", "2x"],
+          "expresion": "8x² ÷ 4",
+          "opciones": ["2x²", "4x", "2x"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "2x * (2x + 1)",
-          "opciones": ["4x^2 + x", "4x^2 + 2x", "2x^2 + 2x"],
+          "expresion": "2x × (2x + 1)",
+          "opciones": ["4x² + x", "4x² + 2x", "2x² + 2x"],
           "respuestaCorrecta": 1
         },
         {
-          "expresion": "-x^3/x",
-          "opciones": ["-x", "-x^2", "-1"],
+          "expresion": "−x³ ÷ x",
+          "opciones": ["−x", "−x²", "−1"],
           "respuestaCorrecta": 1
         },
         {
-          "expresion": "(2x^2)^2",
-          "opciones": ["4x^4", "2x^4", "4x^2"],
+          "expresion": "(2x²)²",
+          "opciones": ["4x⁴", "2x⁴", "4x²"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "5x * (x - 1)",
-          "opciones": ["5x^2 - 5x", "5x^2 - x", "5x^2 + 5x"],
+          "expresion": "5x × (x − 1)",
+          "opciones": ["5x² − 5x", "5x² − x", "5x² + 5x"],
           "respuestaCorrecta": 0
         },
         {
-          "expresion": "9x^2/3x",
-          "opciones": ["3x^2", "3x", "6x"],
+          "expresion": "9x² ÷ 3x",
+          "opciones": ["3x²", "3x", "6x"],
           "respuestaCorrecta": 1
         },
         {
-          "expresion": "-2x * (x + 3)",
-          "opciones": ["-2x^2 - 6", "-2x^2 - 6x", "-2x^2 + 6x"],
+          "expresion": "−2x × (x + 3)",
+          "opciones": ["−2x² − 6", "−2x² − 6x", "−2x² + 6x"],
           "respuestaCorrecta": 1
         },
         {
-          "expresion": "(3x)^2",
-          "opciones": ["6x^2", "9x^2", "3x^2"],
+          "expresion": "(3x)²",
+          "opciones": ["6x²", "9x²", "3x²"],
           "respuestaCorrecta": 1
         }
       ]

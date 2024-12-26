@@ -62,9 +62,11 @@ function preload() {
     this.load.spritesheet('alien', 'assets/alien.png', { frameWidth: 32, frameHeight: 48 });
     this.load.audio('jumpSound', 'assets/sounds/jump.mp3');
     this.load.audio('backgroundMusic', 'assets/sounds/background.mp3');
+    this.load.audio('errorSound', 'assets/sounds/error.ogg');
 }
 
 async function create() {
+    loadGameProgress();
     this.backgroundMusic = this.sound.add('backgroundMusic', {volume: 0.5, loop: true });
     this.backgroundMusic.play();
     try {
@@ -215,6 +217,7 @@ function handlePlatformClick(platform, scene, platformIndex) {
         console.log('¡Respuesta correcta!');
         score++;
         scoreText.setText(`Score: ${score}`);
+        saveGameProgress();
         isAnimating = true;
 
         // Animación de salto
@@ -296,15 +299,20 @@ function handlePlatformClick(platform, scene, platformIndex) {
         });
     } else {
         console.log('¡Respuesta incorrecta!');
+        scene.sound.play('errorSound');
         failures++;
         failureText.setText(`Failures: ${failures}`);
-        
+        saveGameProgress();
         scene.tweens.add({
             targets: platform,
             alpha: 0.5,
             duration: 100,
             yoyo: true,
             repeat: 2
+        });
+        player.setTint(0xff0000);
+        scene.time.delayedCall(200, () => {
+            player.clearTint();
         });
     }
 }
@@ -593,6 +601,7 @@ function loadQuestion(scene) {
     levelDescriptionText.setText(questions[currentLevel].descripcion);
     
     updatePlatformAnswers();
+    saveGameProgress();
     
     console.log('Nueva pregunta cargada:', {
         expresion: currentExpression,
@@ -603,10 +612,10 @@ function loadQuestion(scene) {
 
 function update() {
     if (player) {
-        if (player.body.velocity.x === 0) {
+        if (player.body && player.body.velocity.x === 0) {
             player.anims.stop('walk');
             player.setFrame(0);
-        } else {
+        } else if (player.body) {
             player.anims.play('walk', true);
         }
     }
@@ -623,4 +632,25 @@ function cleanupPhysics() {
         }
     });
     platformColliders = [];
+}
+
+function saveGameProgress() {
+    const progress = {
+        score: score,
+        failures: failures,
+        level: currentLevel,
+        problemIndex: currentProblemIndex
+    };
+    localStorage.setItem('gameProgress', JSON.stringify(progress));
+}
+
+function loadGameProgress() {
+    const savedProgress = localStorage.getItem('gameProgress');
+    if (savedProgress) {
+        const progress = JSON.parse(savedProgress);
+        score = progress.score;
+        failures = progress.failures;
+        currentLevel = progress.level;
+        currentProblemIndex = progress.problemIndex;
+    }
 }
